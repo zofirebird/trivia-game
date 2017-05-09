@@ -13,12 +13,12 @@ def error():
     return render_template(
         'error.html')
 
-@app.route('success')
+@app.route('/success')
 def success():
     return render_template(
         'success.html')
 
-@app.route('about')
+@app.route('/about')
 def about():
     return render_template(
         'about.html')
