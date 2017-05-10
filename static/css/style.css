@@ -21,6 +21,27 @@ body {
     padding: 5px;
 }
 
+.flex-success-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 4px;
+    padding: 5px;
+    min-height: 100px;
+    background-color: #42f46e;
+    
+}
+
+.flex-success-items {
+    color: white;
+    text-align: center;
+    align-items: stretch;
+    padding: 5px;
+
+}
+
 #start {
   background: #3498db;
   background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
