@@ -8,7 +8,6 @@
     <meta name="description" content="Question One of the Your Game">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
     <link rel="stylesheet" type="text/css" href="../static/css/style.css">
-    <link rel="stylesheet" type="text/css" href="../static/css/play.css">
 </head>
 
 <body>
@@ -19,9 +18,8 @@
         </div>
 
         <div class="flex-item">
-           <input id="start" type="submit" value="Put your start game Text here" />
-           <form action={{ url_for (question) }}>
-                <input type="submit" value="Go to start" />
+           <form action="{{ url_for('question') }}" >
+                <input class="start" type="submit" value="Start"/>
             </form>
         </div>
         
