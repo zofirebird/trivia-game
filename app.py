@@ -29,28 +29,29 @@ def about():
     return render_template(
         'about.html')
         
-# @app.route('/questions/<string:answer>/<int:question_id')
-# def questions(answer, question_id ):
-  #  if question_id = 1
-  #      if answer = "blue"
-   #        return render_template(
-    #           'success.html')
-    #    elif
-    #      return render_template(
-    #         'error.html',
-    #          correct_answer = answer)
-    #elif question_id = 2
-     #   return render_template(
-      #      'questions/2.html')
-    #elif question_id = 3
-    #    return render_template(
-    #        'questions/3.html')
-#    elif question_id = 4 
-#        return render_template(
-#            'questions/4.html')
-#    elif question_id = 5
-#        return render_template(
-#            'questions/5.html')
-
+@app.route('/questions/<string:answer>/<int:question_id>')
+def questions( answer, question_id ):
+    try:
+        if question_id == 1:
+            if answer == "blue":
+                return render_template(
+                'success.html')
+            else:
+                return render_template(
+                    'error.html',
+                    correctAnswer = "blue")
+        elif question_id == 2:
+            if answer == "YOUR ANSWER HERE":
+                return render_template(
+                    'success.html')
+            else:
+                return render_template(
+                    'error.html',
+                    correctAnswer = "YOUR CORRECT ANSWERE HERE")
+        #TODO
+        # Add 3more for each question id and fix your template accordingly
+    except ValueError:
+        print ('Oops thats an error should be caught')
+    
 
 app.run(host=os.getenv('IP', '0.0.0.0'),port=int(os.getenv('PORT', 8080)))
