@@ -20,23 +20,23 @@
         </div>
 
         <div class="flex-item" >
-           <p>Question 2 Goes HERE</p>
+           <p>What color is the sky during the day?</p>
         </div>
         
     </div>
 
     <div class="flex-container">
-        <div class="flex-item" data-color="#2980B9" style="background-color: rgb(42, 128, 185);">
-            <p>Multiple Choice Answer 1</p>
+        <div class="flex-item" id="blue" data-color="#2980B9" style="background-color: rgb(42, 128, 185);">
+            <a href = {{ url_for(questions, answer="blue", question_id=2) }}>Blue</a>
         </div>
-        <div class="flex-item" data-color="#8f44ad" style="background-color: rgb(143, 68, 173);">
-            <p>Multiple Choice Answer 2</p>
+        <div class="flex-item" id="green" data-color="#8f44ad" style="background-color: rgb(143, 68, 173);">
+            <p>Green</p>
         </div>
-        <div class="flex-item" data-color="#16a086" style="background-color: rgb(22, 160, 134);">
-            <p>Multiple Choice Answer 3</p>
+        <div class="flex-item" id="yellow" data-color="#16a086" style="background-color: rgb(22, 160, 134);">
+            <p>Yellow</p>
         </div>
-        <div class="flex-item" data-color="#f1c40f" style="background-color: rgb(241, 196, 15);">
-            <p>Multiple Choice Answer 4</p>
+        <div class="flex-item" id="white" data-color="#f1c40f" style="background-color: rgb(241, 196, 15);">
+            <p>White</p>
         </div>
     </div>
     
